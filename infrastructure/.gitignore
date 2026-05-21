@@ -1,0 +1,6 @@
+# Ignorar archivos locales y de estado de Terraform
+.terraform/
+.terraform.*
+*.tfstate
+*.tfstate.backup
+*.tfvars
