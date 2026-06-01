@@ -5,3 +5,5 @@ frontend/src/config.js~
 venv/
 .idea
 .DS_Store
+echo ".idea/" >> .gitignore
+echo "*.pkg" >> .gitignore
