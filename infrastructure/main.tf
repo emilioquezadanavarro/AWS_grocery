@@ -51,6 +51,7 @@ resource "aws_instance" "grocery_web_server" {
   # IMPORTANT: Replace this value with the AMI ID from your specific region or a previously created EC2 instance.
   ami           = "ami-0e385350f5eb99828"
   instance_type = "t2.micro"
+  key_name      = "GroceryMateServer"
 
   # Associate the EC2 instance with the web security group created above.
   vpc_security_group_ids = [aws_security_group.grocery_web_sg.id]
